@@ -12,18 +12,23 @@ body {
 }
 
 header {
-    background: #228b45;
+    background: #176b3a;
     color: white;
-    padding: 25px;
     text-align: center;
+    padding: 35px 20px;
 }
 
-h1 {
+header h1 {
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
+header p {
+    font-size: 18px;
+}
+
 main {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 30px auto;
     padding: 20px;
 }
@@ -31,7 +36,39 @@ main {
 section {
     background: white;
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px #00000015;
+    box-shadow: 0 3px 12px #00000010;
 }
+
+section h2 {
+    color: #176b3a;
+    margin-bottom: 15px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+#crop-list {
+    margin-top: 20px;
+}
+
+.crop-card {
+    background: #e7f5e9;
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border-left: 5px solid #228b45;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+
